@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="uz-Cyrl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Тубсизликнинг энг юқори нуқтаси</title>
+<style>
+:root{--tx:#0e2a55;--mu:#3f5f8f;--ac:#1b5fb3;--ac2:#b8860b;--gold:#d4a017;--bd:rgba(201,154,29,.42);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px;scroll-behavior:smooth;color-scheme:light}
+body{margin:0;background:#a9d8fb;color:var(--tx);font:16px/1.6 Georgia,"Times New Roman",serif}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;background:linear-gradient(180deg,#4aa8f0 0%,#8fcbf8 38%,#cfe9fb 68%,#fff1c9 100%)}
+.hero,main,footer{position:relative;z-index:1}
+.hero{text-align:center;padding:72px 20px 48px}
+.hero small{letter-spacing:.2em;text-transform:uppercase;color:#8a5f00;font-size:12px;font-weight:bold}
+.hero h1{font-size:clamp(30px,7vw,56px);line-height:1.15;margin:14px auto;max-width:800px;color:#0b2455;text-shadow:0 2px 18px rgba(255,255,255,.75),0 0 2px rgba(255,255,255,.9)}
+.hero p{color:#17376b;max-width:560px;margin:0 auto;text-shadow:0 1px 8px rgba(255,255,255,.8)}
+.hero::after{content:"✦ ✦ ✦";display:block;color:var(--gold);letter-spacing:.7em;margin-top:20px;text-shadow:0 0 10px rgba(255,215,90,.9)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:8px;overflow-x:auto;padding:10px 16px;background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+nav a{flex:none;padding:6px 14px;border:1px solid var(--bd);border-radius:20px;color:var(--tx);text-decoration:none;font-size:14px;background:rgba(255,255,255,.6)}
+nav a:hover{border-color:var(--gold);color:#8a5f00;background:#fff7dc}
+main{max-width:860px;margin:0 auto;padding:28px 16px 60px;display:grid;gap:20px}
+section{background:rgba(255,255,255,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--bd);border-radius:16px;padding:22px 22px 14px;box-shadow:0 6px 28px rgba(20,70,140,.14),inset 0 0 0 1px rgba(255,235,170,.6);border-top:3px solid var(--gold)}
+section h2{margin:0 0 12px;font-size:22px;color:var(--ac)}
+section h2 span{color:var(--ac2);margin-right:8px;text-shadow:0 0 10px rgba(255,200,60,.55)}
+ul{margin:0;padding:0;list-style:none}
+li{padding:9px 0 9px 22px;border-top:1px solid rgba(201,154,29,.28);position:relative}
+li:first-child{border-top:0}
+li::before{content:"✦";position:absolute;left:0;top:10px;font-size:11px;color:var(--gold)}
+li.p{color:var(--ac);font-weight:bold}
+.note{color:var(--mu);font-style:italic;padding:4px 0 10px}
+footer{text-align:center;color:#17376b;padding:30px 16px;font-size:14px}
+.cd{margin:12px 0 10px;border:1px solid var(--bd);border-radius:12px;overflow:hidden;background:rgba(255,250,232,.75)}
+.cd[open]{border-color:var(--gold);box-shadow:0 0 18px rgba(255,200,60,.3)}
+.cd summary{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:center;padding:12px 14px}
+.cd summary::-webkit-details-marker{display:none}
+.cd .n{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);color:var(--ac2);display:grid;place-items:center;font-weight:bold;background:radial-gradient(circle,#fff6cf,#ffe9a0)}
+.cd .t{padding:0 16px 14px;border-top:1px solid var(--bd)}
+.cd .t p{margin:10px 0 0}
+.cd .k{color:var(--ac);font-style:italic}
+.cd h3{margin:0 0 6px;font-size:16px;color:var(--ac2)}.cd p{margin:10px 0}
+
+/* cosmos theme */
+:root{--tx:#ece8f7;--mu:#a9a4c8;--ac:#b9a2ff;--ac2:#e6c36a;--gold:#e6c36a;--bd:rgba(169,139,255,.28)}
+html{color-scheme:dark}
+body{background:#05040d}
+#sky{background:radial-gradient(ellipse at 18% 14%,rgba(110,70,220,.40),transparent 55%),radial-gradient(ellipse at 88% 55%,rgba(30,90,200,.32),transparent 55%),radial-gradient(ellipse at 40% 105%,rgba(190,60,140,.26),transparent 60%),#05040d}
+.hero small{color:#e6c36a}
+.hero h1{color:#fff;text-shadow:0 0 26px rgba(150,110,255,.65)}
+.hero p{color:#cfc9ee;text-shadow:none}
+.hero::after{text-shadow:0 0 12px rgba(230,195,106,.8)}
+nav{background:rgba(8,7,20,.78)}
+nav a{color:var(--tx);background:rgba(255,255,255,.06)}
+nav a:hover{color:#e6c36a;background:rgba(230,195,106,.12);border-color:#e6c36a}
+section{background:rgba(14,12,34,.64);box-shadow:0 6px 30px rgba(0,0,0,.45)}
+section h2 span{text-shadow:0 0 10px rgba(230,195,106,.5)}
+li{border-top-color:rgba(169,139,255,.2)}
+footer{color:var(--mu)}
+.cd{background:rgba(255,255,255,.05)}
+.cd[open]{box-shadow:0 0 20px rgba(230,195,106,.2)}
+.cd .n{background:radial-gradient(circle,rgba(230,195,106,.25),transparent 70%)}
+body{font-family:'Alegreya',Georgia,serif;font-size:20px;line-height:1.75}
+.hero h1,section h2,nav a,.cd .n,.cd summary b{font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700}
+section h2{font-size:26px}
+/* initiation pills */
+.ini{margin:14px 0 10px;border:1.5px solid rgba(150,130,225,.5);border-radius:24px;background:rgba(255,255,255,.06);overflow:hidden}
+.ini[open]{box-shadow:0 0 22px rgba(230,195,106,.12)}
+.ini summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:20px;padding:20px 22px}
+.ini summary::-webkit-details-marker{display:none}
+.ini .n{flex:none;width:60px;height:60px;border-radius:50%;border:2.5px solid #e6c36a;color:#e6c36a;display:grid;place-items:center;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;font-size:26px}
+.ini b{font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;font-size:clamp(22px,6.2vw,34px);line-height:1.1;letter-spacing:.015em;color:#ece8f7;overflow-wrap:anywhere}
+.ini .t{padding:2px 24px 20px;border-top:1px solid rgba(150,130,225,.28)}
+.ini .t p{margin:14px 0 0}
+/* social links */
+.socs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;padding-bottom:10px}
+.soc{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1.5px solid rgba(150,130,225,.5);border-radius:18px;background:rgba(255,255,255,.06);color:#ece8f7;text-decoration:none}
+.soc:hover,.soc:focus-visible{border-color:#e6c36a;background:rgba(230,195,106,.1);outline:none}
+.soc .si{flex:none;width:44px;height:44px;border-radius:50%;border:2px solid #e6c36a;color:#e6c36a;display:grid;place-items:center}
+.soc .st b{display:block;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-size:21px;line-height:1.15}
+.soc .st small{display:block;color:#a9a4c8;font-size:14px;margin-top:2px}
+
+/* lesson parts */
+.part{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;margin:16px 0 6px;padding-top:12px;border-top:1px dashed rgba(169,139,255,.3)}
+section h2+.part{border-top:0;padding-top:0;margin-top:4px}
+.part span{flex:none;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;color:#e6c36a;font-size:18px;min-width:22px}
+.part b{font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-size:21px;letter-spacing:.06em;text-transform:uppercase;color:var(--ac)}
+.part i{flex-basis:100%;padding-left:32px;color:var(--tx);font-style:italic}
+.part+ul{padding-left:8px}
+.soon{color:var(--mu);font-style:italic;margin:6px 0 12px}
+.hero .pill{display:inline-block;margin-top:14px;padding:8px 16px;border:1px solid var(--bd);border-radius:24px;font-size:15px;color:#e6c36a;background:rgba(255,255,255,.04)}
+.cta{display:inline-block;margin-top:22px;padding:12px 26px;border-radius:30px;border:1.5px solid #e6c36a;color:#05040d;background:#e6c36a;text-decoration:none;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;font-size:20px;box-shadow:0 0 24px rgba(230,195,106,.35)}
+.cta:hover,.cta:focus-visible{background:transparent;color:#e6c36a;outline:none}
+footer a{color:#e6c36a}
+
+/* bitik scrolls */
+.bt{margin:12px 0 10px;border:1px solid rgba(230,195,106,.4);border-radius:18px;background:linear-gradient(180deg,rgba(230,195,106,.07),rgba(255,255,255,.03));overflow:hidden}
+.bt[open]{box-shadow:0 0 24px rgba(230,195,106,.14)}
+.bt summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:16px 20px}
+.bt summary::-webkit-details-marker{display:none}
+.bt summary::after{content:"＋";margin-left:auto;color:#e6c36a;font-size:20px;flex:none}
+.bt[open] summary::after{content:"－"}
+.bt .n{flex:none;min-width:48px;height:48px;padding:0 6px;border-radius:24px;border:1.5px solid rgba(230,195,106,.7);color:#e6c36a;display:grid;place-items:center;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;font-size:20px}
+.bt small{display:block;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--mu)}
+.bt b{font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-size:clamp(20px,5vw,26px);line-height:1.15;color:#ece8f7}
+.bt .t{padding:4px 24px 20px;border-top:1px solid rgba(230,195,106,.25);font-style:italic}
+.bt .t p{margin:14px 0 0}
+.bt .t p.bh{font-style:normal;font-family:'Cormorant','Cormorant Garamond',Georgia,serif;font-weight:700;letter-spacing:.06em;color:#e6c36a;font-size:19px;margin-top:22px}
+@media (max-width:520px){body{font-size:18px}section{padding:18px 16px 12px}.part i{padding-left:0}}
+.part b{flex:1 1 0;min-width:0}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Cormorant:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="sky"></canvas>
+<header class="hero">
+<small>30 дарсдан иборат дастур</small>
+<h1>ТУБСИЗЛИКНИНГ ЭНГ ЮҚОРИ НУҚТАСИ</h1>
+<p>Ўзбек аудиторияси учун ягона ва биринчи уйғониш ва унинг сир-асрорларига бағишланган мукаммал лойиҳа</p>
+<p class="pill">Чегара ортидан битиклар • Илмий-амалий асл билимлар • Инициациялар • Амалиётлар</p>
+<a class="cta" href="#links">Биз билан боғланиш</a>
+</header>
+<nav>
+<a href="#d1">1-дарс</a><a href="#d2">2-дарс</a><a href="#d3">3-дарс</a><a href="#d4">4-дарс</a><a href="#d5">5-дарс</a><a href="#d6">6-дарс</a><a href="#d7">7-дарс</a><a href="#d8">8-дарс</a><a href="#d9">9-дарс</a><a href="#d10">10-дарс</a><a href="#d11">11-дарс</a><a href="#d12">12-дарс</a><a href="#d13">13-дарс</a><a href="#d14">14-дарс</a><a href="#d15">15-дарс</a><a href="#d16">16-дарс</a><a href="#d17">17-дарс</a><a href="#d18">18-дарс</a><a href="#d19">19-дарс</a><a href="#d20">20-дарс</a><a href="#d21">21-дарс</a><a href="#d22">22-дарс</a><a href="#d23">23-дарс</a><a href="#d24">24-дарс</a><a href="#d25">25-дарс</a><a href="#d26">26-дарс</a><a href="#d27">27-дарс</a><a href="#d28">28-дарс</a><a href="#d29">29-дарс</a><a href="#d30">30-дарс</a><a href="#links">Алоқа</a>
+</nav>
+<main>
+
+<section id="d1"><h2><span>1</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Карма яратиш босқичи тугади</li>
+<li>Ердан ташқари цивилизацияларнинг яралиши</li>
+<li>Маъносизликдан маъно излаш босқичи</li>
+<li>Сохта пайғамбарлик даври</li>
+<li>«Мистик тун» босқичи</li>
+<li>«Руҳ туни» тушунчаси</li>
+<li>«Ўлим сояси водийси»</li>
+<li class="p">Бир бутунга айланиш амалиёти</li>
+<li class="p">«Бутунлай йўқ бўлиб кетиш» амалиёти</li>
+<li>Ўз вазифасига етиб келиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">I</span><span><small>Битик</small><b>ШАХСИЯТНИНГ ШАКЛЛАНИШ ИБТИДОСИ</b></span></summary><div class="t"><p>Аввалида — сен йўқ эдинг.</p><p>Тана бор эди.<br>Нафас бор эди.<br>Ўзларининг кимлигини ҳам билмаган инсонлар томонидан сенга берилган бегона исм бор эди.</p><p>Сен тилни танламагансан.<br>Сен эътиқод танламагансан.<br>Сен «тарбия» деб аталган жараён орқали тери остига сингдирилган қўрқувларни ҳам танламагансан.</p><p>Шахсият ана шундай шакллана бошлади.</p><p>Сенинг моҳиятинг сифатида эмас.<br>Балки «ёқиши», «мос келиши», «халақит бермаслиги» керак бўлган ниқоб сифатида.</p><p>Сен — бир функцияга айландинг.<br>Ўзгаларнинг кутилмаларига айландинг.<br>Бошқаларнинг қарашларидан шакллантирилган қиёфага айландинг.</p><p>Ва сен илк бор:</p><p>«Мен кимман?» — деб сўраганингда,</p><p>бу шунчаки савол эмас эди.</p><p>Бу — зарба эди.<br>Дарз кетиш эди.</p><p>Айнан шу дарз кетишдан асл моҳиятингга қайтиш бошланди…</p></div></details>
+</section>
+
+<section id="d2"><h2><span>2</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Ҳаёт маъносининг йўқолиши, мазмунсизлик, хоҳишсизлик ва мотивация етишмаслиги</li>
+<li>Ғазаб, қаҳр, жиззакилик, сарказм, ҳасад, рашк, кибр, мақтанчоқлик, қоралаш, назорат, хавотир, қўрқув, ваҳима, қайғу, соғинч, ёлғизлик, уят, айбдорлик, хижолат, очкўзлик ва ҳақликка эҳтиёж каби эмоцияларнинг илдизлари</li>
+<li class="p">Эго ўйинларидан тез чиқиш техникаси</li>
+<li class="p">«Ҳаёт учун миннатдорлик» амалиёти</li>
+<li>Фильтрация жараёни</li>
+<li>«Мистик тунлар». Маъносизлик билан юзлашув. Уйғонишда кечадиган жараёнлар ва уларнинг якунланиш нуқтаси</li>
+<li>Уч кузатувчи модели: ҳиссий, концептуал ва ташқи кузатувчи</li>
+<li>Кузатувчи ҳолатларидан чиқиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">II</span><span><small>Битик</small><b>СЕН АЙНАН, КЕРАК БЎЛГАН ИНСОНГА АЙЛАНДИНГ</b></span></summary><div class="t"><p>Сени қабул қилишлари учун — сен роль ўйнай бошладинг.</p><p>Ўзингни бошқаларга мослаштиришни.</p><p>Қичқиргинг келганда жим туришни.</p><p>Ичингдаги ҳамма нарса қарши бўлганда ҳам рози бўлишни.</p><p>Сен қулай инсонга айландинг.<br>Итоаткор.<br>«Яхши».</p><p>Бу иш берди.</p><p>Токи сен бўғила бошламагунингча.<br>Токи ўз ҳаётингни эмас, бошқа бировнинг ҳаётини яшаётганингни англаб етмагунингча.<br>Ва аслида ўзинг нимани хоҳлаётганингни энди билмай қолганингни сезмагунингча.</p><p>Сен Шахсиятга айландинг — аммо унга айланишингдан аввал, ким бўлганингни унутдинг.</p></div></details>
+</section>
+
+<section id="d3"><h2><span>3</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Импульс: етишмовчиликдан келиб чиқадиган импульс ва тўлиқликдан келиб чиқадиган импульс</li>
+<li class="p">«Тўғри қарор қабул қилишни ўрганиш» амалиёти</li>
+<li>Сайёрада кутилаётган ўзгаришлар: ҳарорат аномалиялари ва технологияларнинг такомиллашуви. Давлатчилик.</li>
+<li>Нурланган инсоннинг яратувчанлиги</li>
+<li>Аутистлар бошқарадиган цивилизация даври</li>
+<li>Сингулярлик ва онгнинг ўз маънолари ичига қулаши</li>
+<li>Қора туйнукнинг пайдо бўлиши ва унинг уйғониш билан алоқаси</li>
+<li class="p">«Мавжудликка айланиш» амалиёти</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">III</span><span><small>Битик</small><b>ҲАММА НАРСА БАРБОД БЎЛГАНДА</b></span></summary><div class="t"><p>Қайсидир пайт илгари иш берган барча нарсалар ўз таъсирини йўқота бошлайди.</p><p>Гўёки сен ҳамма нарсани «тўғри» қилаётгандексан.</p><p>Аммо ичингда — бўшлиқ.</p><p>Ҳатто севимли нарсаларинг ҳам аввалгидек завқ бағишламай қўяди.</p><p>Бу инқироз эмас.<br>Бу — сигнал.</p><p>Эски «Мен» емирила бошлайди.</p><p>У энди ўзини сунъий таянчлар ёрдамида ушлаб тура олмайди.</p><p>Ичкарингда дарз кета бошлайди.</p><p>Ва сен илк бор ҳис қиласан:</p><p>«Мен ўзимнинг кимлигимни билмайман».</p><p>Ва бу — бошланиш.</p><p>Сен остонада турибсан.</p><p>Бу ерда ҳали ҳамма нарса қўрқинчли.</p><p>Аммо энди — сенинг асл ўзлигинг намоён бўлмоқда.</p></div></details>
+</section>
+
+<section id="d4"><h2><span>4</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Ғазаб, уят, тана ва сексуаллик</li>
+<li class="p">«Оғриқни фаоллаштириш» амалиёти</li>
+<li class="p">Майдон билан бирлашув амалиёти</li>
+<li>Онг эволюцияси: лимбиклар, кабионлар, колениумлар, Саран цивилизацияси, Лемурия ва Атлантида</li>
+<li>Аутистлар ҳақида</li>
+<li>Онгли овқатланишга ўтиш. Диета. Тананинг стрессга учраши. Овқатдан дофамин олиш</li>
+<li class="p">«Тубсизлик чегарасидан чиқиш» амалиёти</li>
+<li>Майдон билан бирлашиш</li>
+<li class="p">«Тўлиқ эриш» амалиёти</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">IV</span><span><small>Битик</small><b>ЙЎҚОЛМАЙДИГАН НАРСА</b></span></summary><div class="t"><p>Сен ҳамма нарсани йўқотганингда:</p><p>Маънони, назоратни, мақсадларни, бошқалар олдидаги қиёфангни —</p><p>ичингда қандайдир сокин бир нарса ура бошлайди.</p><p>Бу ҳиссиёт эмас.<br>Бу фикр ҳам эмас.</p><p>Гўё кимдир шунчаки МАВЖУД.</p><p>Ҳеч қандай сабабсиз.<br>«Яхшироқ» бўлишга эҳтиёж сезмасдан.<br>Ҳеч қандай курашсиз.</p><p>Ана шу — СЕНСАН.</p><p>Тарбия орқали шакллантирилган сен эмас.</p><p>Бошқалар йўқотишдан қўрқадиган сен ҳам эмас.</p><p>Балки азалдан мавжуд бўлган СЕН.</p><p>Сўзлар пайдо бўлишидан аввал.<br>Оғриқ пайдо бўлишидан аввал.<br>Барча қиёфалар шаклланишидан аввал.</p><p>Ва сен англай бошлайсан:</p><p>«Мен кимдир бўлишим шарт эмас.</p><p>“Мен — шунчаки МАВЖУДМАН!”</p></div></details>
+</section>
+
+<section id="d5"><h2><span>5</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Сакрал-метафизик қонуниятлар ва илоҳий тамойиллар</li>
+<li>Борлиқнинг иккига бўлиниш куни ҳақида</li>
+<li>Арканлар: рамзлар ва порталлар, ички қувонч манбаи хариталари</li>
+<li>Арканлар занжири ва эволюция алхимияси</li>
+<li>2027-йилда кутилаётган ўзгаришлар, жавобсиз саволлар ва назоратсиз ижтимоий тармоқлар</li>
+<li>Яратувчидан узоқлашганда олий кучга яқинлашиш босқичи бўлиши. «Охир замон» аломатлари</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">✦</span><span><small>Битик</small><b>УЙҒОНИШ</b></span></summary><div class="t"><p>— Сен эски нарсалар энди иш бермаётганини ҳис қиляпсан.</p><p>— Роллар дарз кетаётганини. Фикрлар такрорланаётганини. Истаклар эса энди сенга тегишли эмаслигини.</p><p>Бу инқироз эмас. Бу — ЧАҚИРУВ.</p><p>Сен остонада турибсан.</p><p>Агар сен шу ерда бўлсанг, демак, аллақачон ўша чақириқни эшитгансан.</p><p>Ўша азалий даъватни.</p><p>Ичкаридан. Чегаралар ортидан. Ўзингдан.</p><p>Сен «йўлни бошламаяпсан».</p><p>Сен шунчаки ўзини унутиб қўйган, аммо азалдан Манба бўлиб келганингни эслаяпсан.</p><p>Бу ерда методлар бўлмайди.<br>Бу ерда устоз бўлмайди.</p><p>Ҳатто сен ҳам бўлмайсан — ўзинг ўрганиб қолган ўша кўринишда.</p><p class="bh">СЕН БИЛАН НИМАЛАР СОДИР БЎЛАДИ?</p><p class="bh">1. ШАХСИЯТНИНГ ҚАТЛАМЛАРГА АЖРАЛИШИ</p><p>Сен «ўзим» деб ҳисоблаб келган нарсаларинг ўзини ғалати тута бошлайди.</p><p>— Ғазабланиш.<br>— Бегоналашиш.<br>— Кузатув ҳолатига ўтиш.</p><p>Бу табиий ҳолат.</p><p>Сен энди шунчаки бўлишдан кўра, кузатишни бошлайсан.</p><p class="bh">2. ЖАРАЁНЛАРНИНГ ТЕЗЛАШИШИ</p><p>Орзулар тезда рўёбга чиқиши ёки барбод бўлиши мумкин.</p><p>Чунки Майдон сени ўзингга бузилишларсиз қайтаришни бошлайди.</p><p class="bh">3. ТАНАНИНГ ҚАЙТА ДАСТУРЛАНИШИ</p><p>Кимдадир — танада иссиқлик, кўз ёшлари, энергиянинг кучли тўлқинлари пайдо бўлади.</p><p>Кимдадир эса — сукунат, бефарқлик ҳолати кузатилади.</p><p>Тана ҳимояларсиз яшашни бошлайди.</p><p class="bh">4. МАЪНОНИ ЙЎҚОТИШ ВА РАВШАНЛИККА ЭРИШИШ</p><p>Аввалига сен бўшлиқни ҳис қилишинг мумкин.</p><p>Аммо агар шу ҳолатда қолсанг — Бўшлиқ ичида Нур намоён бўлади.</p><p class="bh">СЕНДАН НИМА ТАЛАБ ҚИЛИНАДИ?</p><p>— Ҳис қилишдан қўрқма.<br>— Ҳамма нарсани «тушунишга» уринма.<br>— Шунчаки шу ҳолат билан бирга бўл.</p><p>— Агар бўлишгинг келса, ёз.</p><p>Маслаҳат олиш учун эмас, балки ўзингни акс эттириш учун.</p><p>Сен шогирд эмассан.</p><p>Сен — барча ниқоблар ёниб кулга айланадиган АЛАНГАСАН.</p><p>Ва агар сен шу ерда бўлсанг —</p><p>Демак, БЎЛИШ вақти келди!</p></div></details>
+</section>
+
+<section id="d6"><h2><span>6</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Эски уйғониш усули ва янги замон усулининг бир нуқтада учрашиши</li>
+<li>Шахсиятнинг парчаланиши: эндокрин, асаб ва иммун тизимларидаги ўзгаришлар</li>
+<li>Уйғонишда аҳамиятсиз жиҳатлар: шахсият, вақт, эмоционал ҳолат ва келажак</li>
+<li>Шахсият минораси қулаганда кузатиладиган босқичлар: руҳнинг қоронғу тунлари, мистик тун, тубсизлик, соялар водийси ва бир бутунлик онги</li>
+<li>Уч кузатувчи позицияси: концептуал, ҳиссий ва ташқи кузатувчи</li>
+<li class="p">Учинчи кузатувчи. Кузатувчини эритиш амалиёти</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">V</span><span><small>Битик</small><b>СЕН ҚОЛАДИГАН БЎШЛИҚ</b></span></summary><div class="t"><p>Маъно йўқолганда, кимдир бўлишга бўлган эҳтиёж ҳам йўқолади.</p><p>Сен шунчаки ўтирасан.<br>Шунчаки нафас оласан.<br>Шунчаки кузатасан — ва энди қочишни истамайсан.</p><p>Дунё бегоналашиб қолгандек туюлади. Сен гўё вақтдан ташқаридасан.</p><p>Ва шу ҳолатда кутилмаганда хотиржамлик.</p><p>Ҳеч ким сендан ҳеч нарса талаб қилмайди.<br>Ҳеч ким ҳеч нарса кутмайди.<br>Ҳатто сен ҳам энди ўзингга босим ўтказмайсан.</p><p>Мана шу — Бўшлиқ.</p><p>Бу «ҳеч нарса йўқ» дегани эмас, балки:</p><p>«Энди ҳеч нарсага эҳтиёж йўқ».</p><p>Сен илк бор шунчаки мавжуд бўлишинг мумкинлигини ҳис қиласан.</p><p>Ҳеч қандай тушунтиришларсиз.<br>Ҳеч қандай ўзини оқлашларсиз.<br>Ҳеч қандай мақсадларсиз.</p><p>Ва бирдан —</p><p>айнан мана шу ҳолат энг ҳақиқий ҳолатга айланади.</p></div></details>
+</section>
+
+<section id="d7"><h2><span>7</span>дарс</h2>
+<div class="part"><span>I</span><b>Чегара ортидаги битиклар</b></div>
+<details class="bt"><summary><span class="n">VI</span><span><small>Битик</small><b>НИҚОБСИЗ ҚАЙТИШ</b></span></summary><div class="t"><p>Сен қайтишни бошлаяпсан.</p><p>Аввалгидек — ғоялар, режалар, «янги ҳаёт» билан эмас.</p><p>Шунчаки.<br>Сокин.</p><p>Гўёки сен қайтмаяпсан, балки сукунат сенинг ичингдан ўтиб бормоқда.</p><p>Сен дунёга қарайсан ва «яхшироқ» бўлишга ҳаракат қилмайсан.</p><p>Сен энди ҳеч нарсани исботламайсан.<br>Солиштирмайсан.<br>Ушлаб турмайсан.</p><p>Сен «янги инсон» эмассан.</p><p>Сен — ҳақиқийсан.</p><p>Нима учун сукут сақлаётганингни, нима учун энди пойгада иштирок этишни истамаётганингни, нима учун бошқаларга зерикарли туюлган жойда сен ўзингни хотиржам ҳис қилаётганингни тушунтиришга эҳтиёж сезмайсан.</p><p>Қайтиш — бу «яна бир имконият» ҳақида эмас.</p><p>Бу — сен энди ўзинг бўлишдан қўрқмаслигинг ҳақида.</p><p>Ҳатто сени ҳеч ким тушунмаса ҳам.</p></div></details>
+<div class="part"><span>II</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">19</span><b>ЖОНЛИ ҚУЁШ</b></summary><div class="t"><p>Бу — ёруғлик, қувонч ва юксак англаш рамзи бўлиб, у иллюзиялардан ўтиб, маърифат ҳолатига эришишга ёрдам беради.</p><p>19-карта руҳий камолот йўлини ва ўзининг чексиз ёруғлик манбаи билан боғлиқлигини англашни кўрсатади.</p><p>У руҳий ва моддий олам ўртасидаги кўприк бўлиб, ички бойиш ҳамда Руҳ вазифасини амалга ошириш учун ташқи макондаги воқеа-ҳодисаларни шакллантириш имкониятларини беради.</p></div></details>
+</section>
+
+<section id="d8"><h2><span>8</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li class="p">«Мавжудликсиз мавжудлик» амалиёти</li>
+<li>Дераза ва нур метафораси (шахсиятнинг парчаланиши)</li>
+<li>Руҳнинг қоронғу туни ва мистик тун</li>
+<li>Пул, полиморфизм ва серобгарлик</li>
+<li>Кузатувчини топиш ва жараённинг ўзига айланиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">2</span><b>КОСМИК ОНА. МАТЕРИЯ</b></summary><div class="t"><p>Ушбу карта Ягона, Ҳамма нарсани қамраб олувчи Борлиқ ва Космик онгнинг ягона воқелик сифатидаги моҳиятини очиб беради.</p><p>У Она — нур, мавжуд бўлган барча нарсанинг манбаи эканини ва бу нур материянинг ҳар бир заррасида намоён бўлишини эслатади.</p><p>Ўз кучларингни — интуициянгни ва олдиндан сезиш қобилиятингни англа.</p><p>Космик Материя картаси тушуниш, сабр-тоқат, раҳм-шафқат ва кечира олиш қобилиятини ифодалайди.</p><p>Ушбу карта ўз онг остингга ва орзуларингга эътибор қаратиш зарурлигини билдиради.</p><p>Бу карта билимларга олиб борувчи «Самовий дарвозалар»ни ва ахборот майдонига кириш имкониятини ифодалайди.</p></div></details>
+</section>
+
+<section id="d9"><h2><span>9</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Ўзликка қайтиш ва ички эркинлик</i></div>
+<ul>
+<li>Бошқалар кутган инсонга айланиш жараёнида ўзликни йўқотиш</li>
+<li>Муҳаббат ва эътибор учун ўзидан воз кечиш</li>
+<li>Ички синиш ва яширин эҳтиёжларни англаш</li>
+<li>Ички кураш, енгиллик ва ўз хоҳишларига рухсат бериш</li>
+<li>Натижа ортидан изланаётган хотиржамлик</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">11</span><b>ПОТЕНЦИАЛ. РУҲ КУЧИ</b></summary><div class="t"><p>Руҳ кучи мўъжизаларни болаларга хос сеҳрли тафаккурдан эмас, балки муқаддас Илоҳий Қалбдан намоён қилади.</p><p>Ушбу картанинг асосий калит сўзлари: истеъдод ва сахийлик.</p><p>Сизга Руҳ кучини намоён этиш, ўзингизнинг салбий жиҳатларингизни ижобий томонга ўзгартириш, хусусиятларингизни трансформация қилиш ва болаларга хос позициядан ҳаётга катталарча ёндашувга ўтиш имконияти берилади.</p><p>«Руҳ кучи» картаси сизни Қалб йўлига йўналтиради, чунки Руҳ кучи муқаддас Қалбингизда жойлашган.</p><p>Эътиборингизни Қалбингизга қаратинг ва ҳақиқатга тик қаранг:</p><p>«Мен нимани трансформация қилишим керак?»</p></div></details>
+</section>
+
+<section id="d10"><h2><span>10</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Ўзлик образи ва ички ўзгариш</i></div>
+<ul>
+<li>Ўзимиз ҳақимиздаги образ қандай шаклланади?</li>
+<li>Ўтмишдаги инсонлар ва кечинмаларга боғлиқлик</li>
+<li>Муҳаббат ва қабул қилиш ҳақидаги қарашлар</li>
+<li>Эски ҳолат кетиб, янгиси ҳали шаклланмаган давр</li>
+<li>Тажрибага эмоционал боғлиқлик ва уни англаш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">20</span><b>РУҲ МАКОНИ</b></summary><div class="t"><p>Осмоннинг энг сирли ва юксак қисмларидан бирида Муҳаббат саройи деб аталувчи қаср жойлашган.</p><p>Бу ерда энг чуқур сир-асрорлар содир бўлади, бу ерда Подшоҳ Руҳлар жамланган.</p><p>Бу ерда ҳар бир Подшоҳ муқаддас ва муборакдир.</p><p>Бу ерда барча ягона Руҳнинг Севги иплари билан бир-бирига боғланган.</p><p>Бу жой — Руҳнинг уйидир. Руҳ мавжудликни айнан шу ердан олади.</p></div></details>
+</section>
+
+<section id="d11"><h2><span>11</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Воқеликни яхлит кўриш</i></div>
+<ul>
+<li>Алоҳида воқеа ва бутун манзара ўртасидаги фарқ</li>
+<li>Ақлнинг ҳар бир ҳодисага изоҳ топишга интилиши</li>
+<li>Сабаб ва оқибатлар занжири</li>
+<li>Формулалар ҳақидаги таълимот: дарахт ва илдизлар тимсоли</li>
+<li>Эҳтимоллар ва воқеаларга таъсир қилиш ҳақидаги қарашлар</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">1</span><b>КОСМИК ОТА. ЯГОНА ЯРАТУВЧИ</b></summary><div class="t"><p>Сизга юқоридан мадад бор, сизни ҳимоя қилишади.</p><p>Сиз энг азиз орзу-истакларингизнинг амалга ошишига ва энг дадил юксакликларга эришишга умид боғлашингиз мумкин.</p><p>Сизнинг салоҳиятингиз жуда катта. Сиз одамлар учун кўп нарса бера оласиз.</p><p>Руҳингиз миссиясини кашф этинг, ўзингизнинг асл моҳиятингиз Қалбига чуқур шўнғинг.</p><p>Руҳ миссияси — бу очиқ йўллар, бу сизнинг режангиз, бу шундай ҳаётий сценарийларки, уларда барча нарса осонлик билан насиб этади ва ҳаёт роҳат-фароғатда англанади.</p></div></details>
+</section>
+
+<section id="d12"><h2><span>12</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Изланишдан бевосита яшашга ўтиш</i></div>
+<ul>
+<li>Ретритлар ва шахсий танлов</li>
+<li>Саволлардан чарчаш ва жавоб излаш</li>
+<li>«Йўлнинг ўзига айланиш» тушунчаси</li>
+<li>Кундалик ишларда ҳозирги лаҳзани сезиш</li>
+<li>Методика ва концепцияларга боғланиб қолиш</li>
+<li>Кузатувчи, изловчи ва Манба ҳақидаги мулоҳазалар</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">10</span><b>ОЛАМНИНГ ЯРАЛИШИ. ЭФИР МАКОНИДАГИ ТАЯНЧ НУҚТА</b></summary><div class="t"><p>10-карта Илоҳий ва моддий оламлар ўртасидаги нозик чегарани ифодалайди. Ушбу икки оламни ягона Жаҳон Руҳида бирлаштиради.</p><p>Бу — абадий ҳаракат, ўтишлар ва имкониятлар картаси бўлиб, ўзгаришларни қабул қилиш ва ҳаётнинг янги даражаси сари интилиш зарурлигини кўрсатади.</p><p>Ўз саъй-ҳаракатларингиз самарасини йиғиб олинг.</p></div></details>
+</section>
+
+<section id="d13"><h2><span>13</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Муносабатлар ва ташқи баҳолар</i></div>
+<ul>
+<li>Муносабатларда бахт ва ўз аҳамиятини ҳис қилиш</li>
+<li>Бошқаларнинг фикридан қўрқиш</li>
+<li>Ишдаги шошириш, танбеҳ ва ички реакциялар</li>
+<li>Ўзини малакасиз ҳис қилиш</li>
+<li>Низосиз мулоқот ва ички қаршиликни юмшатиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">3</span><b>ИЛК ЯРАЛИШ. НУР АСОСИ</b></summary><div class="t"><p>Ушбу карта ақл-идрок билан мувозанатга келтирилган олий қудратни ифодалайди. Янги ғояларнинг туғилиши ва уларни ҳаётга татбиқ этиш зарурлигини англатади.</p><p>Бу — коинот миқёсидаги ижодий севги харитаси.</p><p>Табиатнинг туганмас қудрати — Ҳаётнинг ўз харитасидир. У ҳаётни ўз ўрнидан, ўз моҳиятини англаган ҳолда идрок этишни ифодалайди.</p><p>Ушбу харита Яратувчи сизни қўлингиздан тутиб бораётганини, тўғри йўлда эканингизни эслатади.</p><p>Эскиликка ёпишиб олманг, янги томон қадам ташланг.</p></div></details>
+</section>
+
+<section id="d14"><h2><span>14</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<ul>
+<li>Ички эркак ва ички аёл ҳақидаги саволлар</li>
+<li>Иш ҳақида ўйлаш ва иш излаш ўртасидаги фарқ</li>
+<li>Аниқ соҳа ва ҳаракат вақтини белгилаш</li>
+<li>Дарҳол натижа кутиш ва жараёнга вақт бериш</li>
+<li>Бутун йўлни билишга уринмасдан, дастлабки қадамларни қўйиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">12</span><b>РУҲИЙ УЙҒОНИШ</b></summary><div class="t"><p>Илоҳийлик билан бирлашиш ва худбинликдан воз кечиш чуқур руҳий англаш йўлини очади.</p><p>Ривожланиш учун оламни яхлит ҳолда қабул қилиш, кибр ва иллюзиялардан халос бўлиш зарур. Трансформация ва янгиланиш жараёнларига йўл очиб, уларнинг сизни олий мақсад сари етаклашига имкон беринг.</p><p>Сизнинг таянчингиз — Осмон, сизнинг йўлингиз эса — руҳий эволюция.</p></div></details>
+</section>
+
+<section id="d15"><h2><span>15</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Амалиётдаги кечинмалар</i></div>
+<ul>
+<li>Амалиётдаги «уруғча» тимсоли</li>
+<li>Ҳаяжон, интилиш ва ирода ҳақидаги мулоҳазалар</li>
+<li>Соя томонларнинг юзага чиқиши</li>
+<li>Жазоланишдан қўрқиш</li>
+<li>Манбани излаш ва ўзини ундан ажратиш мавзуси</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">21</span><b>ҲАҚИҚАТ САРИ ЙЎЛ</b></summary><div class="t"><p>Ушбу карта дадил ташаббус ва жасорат талаб қиладиган ишларингизда муваффақиятни башорат қилади.</p><p>Шубҳаларни четга суринг ва ҳаракат қилинг.</p><p>Ҳақиқат сари йўлда сиз онгнинг янги ҳолатларини бошдан кечирасиз, кутилмаган воқеаларга дуч келасиз, таваккал қилишга тайёр бўласиз, янги тажрибаларни излайсиз ва саргузаштларни бошдан кечирасиз.</p><p>Бу — инсоннинг Индивидуал Руҳидан Худонинг Ягона Руҳига олиб борувчи йўл.</p></div></details>
+</section>
+
+<section id="d16"><h2><span>16</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Пул, меҳнат ва яширин мақсадлар</i></div>
+<ul>
+<li>«Пул ишлашни хоҳлайман» деган истак ортида нима бор?</li>
+<li>Меҳнат, ўзини намоён қилиш ва даромад мақсади</li>
+<li>Пул айланиши ҳақидаги қарашлар</li>
+<li>Қарз ва молиявий йўқотишларга муносабат</li>
+<li>Сотиб олиш истаги ва эгалик қилиш истаги ўртасидаги фарқ</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">4</span><b>МАКОН. ЖАҲОН УЙҒУНЛИГИ</b></summary><div class="t"><p>Ушбу карта адолатга бўлган муҳаббатни, келажакни кўра билишни ва ирода кучини ифодалайди. У ҳиссий ҳолатлар орқали эмоциялар билан ишлашни англатади.</p><p>Ақлни тинчлантириш учун амалиётларни бажаринг, хотиржамлик бағишловчи медитацияларни тингланг, нафас олиш машқлари билан шуғулланинг, спорт билан машғул бўлинг ва табиат қўйнида сайр қилинг.</p><p>Ақл сукутга чўмганида, ушбу картага диққатингизни қаратиб, уни тафаккур билан кузатинг.</p><p>Шунда сиз ўз жавобингизни оласиз.</p></div></details>
+</section>
+
+<section id="d17"><h2><span>17</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Вақтни бўшатиш ва имкониятларни кенгайтириш</i></div>
+<ul>
+<li>Вазифаларни бошқаларга топшириш</li>
+<li>Бошқалар меҳнатига ҳақ тўлаш</li>
+<li>Сунъий интеллект ёрдамчисидан фойдаланиш мисоллари</li>
+<li>Бизнесда маълумотларни таҳлил қилиш ва ишларни ташкил этиш</li>
+<li>Ўзи учун муҳим машғулотларга вақт ажратиш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">13</span><b>ЭНЕРГИЯНИНГ ТРАНСФОРМАЦИЯСИ</b></summary><div class="t"><p>Оламдаги барча нарса Илоҳий уйғунликка бўйсунган ҳолда абадий ҳаракат ва трансформация жараёнида бўлади.</p><p>Ўзгаришлар муқаррар. Бу ўзгаришлар янгиланиш манбаига айланадими ёки турғунликка олиб келадими — бу сизнинг ўз қадр-қимматингизни, ҳалоллигингизни ва қалб поклигингизни сақлай олишингизга боғлиқ.</p></div></details>
+</section>
+
+<section id="d18"><h2><span>18</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b> <i>Салоҳият, диққат ва ички сукунат</i></div>
+<ul>
+<li>Қизиқиш ва ички интилиш орқали йўналишни англаш</li>
+<li>Ҳаётий тажрибалар ва салоҳиятнинг очилиши</li>
+<li>Ахборот тозалиги ва диққатни тарқатмаслик</li>
+<li>Бошқаларни қоралаш ва ўзини оқлаш мавзуси</li>
+<li>Ўзини бошқалар билан солиштириш</li>
+<li>«Бахт сукунатни яхши кўради» иборасининг матндаги талқини</li>
+<li>Ижодий лойиҳалар ва ғояларни амалга ошириш</li>
+</ul>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">22</span><b>ЖАҲОН РУҲИ</b></summary><div class="t"><p>«Жаҳон Руҳи» картаси тинчлик, уйғунлик, гўзаллик ва барқарорликни башорат қилади.</p><p>Бу — ҳаётингиздаги барча ташаббусларни амалга ошириш учун қулай бўлган ажойиб босқич.</p><p>Чегараларни кенгайтириш даври.</p><p>Бу — гўё ҳаёт оқимлари сизни ҳаёт тўлқинлари узра парвоз қилишингизда қўллаб-қувватлаётгандек, парвоз, муҳаббат ва енгиллик ҳолатидир.</p><p>Коинот сиз учун барча нарсани рўёбга чиқаришга тайёр.</p><p>Ўзгаришларни қарши олиш учун Қалбингизни очинг.</p></div></details>
+</section>
+
+<section id="d19"><h2><span>19</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">5</span><b>РУҲ ДОНОЛИГИ. ЙЎЛБОШЧИ. УСТОЗ</b></summary><div class="t"><p>Ушбу карта онгингизни кенгайтириш ва Руҳингизни бойитиш учун билим олишингиз зарурлигини англатади. Руҳий билимлар орқали сиз Илоҳий баракага эришишингиз мумкин.</p><p>Сизда зарур билимларни эгаллаш учун куч ва энергия бор. Энг муҳими, бу энергияни беҳуда сарфлаб юбормаслик.</p><p>Карта маслаҳати: ривожланинг, янги билимларни эгалланг. Чуқур билимларнинг фаоллашуви.</p></div></details>
+</section>
+
+<section id="d20"><h2><span>20</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">14</span><b>АБАДИЙ ЯНГИЛАНИШ</b></summary><div class="t"><p>Сиз мавжуд бўлган барча нарсанинг бир қисмисиз ва айни пайтда Илоҳий ибтидони ҳам ўзингизда мужассам этгансиз. Иллюзиялар ва ҳис-туйғулар кишанларини ўзини назорат қилиш, ишонч ва Олий Куч билан бирликка эришиш сари фаол интилиш орқали нурга айлантириш мумкин.</p><p>Ўзингизни ортиқча нарсалардан озод қилинг, куч-қувватингизни тикланг ва ўз руҳий йўлингиздан борган ҳолда уйғунликка интилиб яшанг. Ўзингизга ва сизни мақсадингиз сари етаклаётган Олий Кучларга ишонинг.</p></div></details>
+</section>
+
+<section id="d21"><h2><span>21</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">6</span><b>СЕВГИ. МУҚАДДАС ҚАЛБ</b></summary><div class="t"><p>Севги — азоб-уқубатлардан халос этишга қодир бўлган ягона кучдир. Муқаддас Қалбингизни очинг, шунда барча нарса қандай ўзгаришини кўрасиз. Оғир ўйлардан бироз дам олинг, ўз ҳис-туйғуларингизга эрк беринг.</p></div></details>
+</section>
+
+<section id="d22"><h2><span>22</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">7</span><b>ҚУДРАТ. ҲИМОЯ</b></summary><div class="t"><p>Ҳаёт — бошқарув ва қатъиятни талаб қиладиган ҳаракатдир. Ушбу карта муваффақиятга эришиш учун мустаҳкам ирода, ҳис-туйғуларни назорат қилиш ва фаол ҳаракат қилиш зарурлигини кўрсатади.</p><p>Интуициянгизга ишонинг ва қобилиятларингизни рўёбга чиқарган ҳолда, ўз салоҳиятингизни камолот сари йўналтиринг. Муваффақият ҳаракат, ижодкорлик ва профессионаллик орқали келади.</p></div></details>
+</section>
+
+<section id="d23"><h2><span>23</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">15</span><b>ИНСОН РУҲИНИНГ НУРИ ВА ҚОРОНҒИЛИГИ</b></summary><div class="t"><p>Ҳақиқий йўл мантиқ орқали эмас, балки Қалб орқали ўтади. Бу йўл иккиланиш ва қарама-қаршиликлар ҳолатидан чиқиб, бетарафлик ҳолатига ўтишни талаб қилади. Ўзингизни англаш ва тўғри танловни амалга ошириш учун ақл иллюзияларидан воз кечинг ва Қалб орқали уйғунликка эришинг.</p></div></details>
+</section>
+
+<section id="d24"><h2><span>24</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">16</span><b>ЎТИШ. ҚАБУЛ ҚИЛИШ КУЧИ</b></summary><div class="t"><p>Ҳаётдаги ҳар қандай ўзгариш — онгнинг янада юксак даражасига ва бирликка томон ташланган қадамдир.</p><p>Бу ўтишнинг калити — янги эшикларни очиш имконини берувчи қабул қилиш кучидир.</p><p>Эскиликнинг емирилиши — охир эмас, балки янада уйғун ва янги йўлга тайёргарликдир.</p></div></details>
+</section>
+
+<section id="d25"><h2><span>25</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">8</span><b>МЕҲР-ШАФҚАТ. КАРМА</b></summary><div class="t"><p>8-карта илоҳий тартиб-қоидалар тамойилларини очиб беради ва макрокосмосдан микрокосмосгача бўлган барча тизимлар тартиби билан уйғунликда яшашни ўргатади.</p><p>Ушбу тартибларнинг бузилиши муайян оқибатларга олиб келади. Аммо уларни англаш ва қабул қилиш руҳий ўсишга, ички мувозанатга эришишга ҳамда ўз салоҳиятини очишга йўл очади.</p><p>Севги, кечирим ва ҳаёт сабоқларини англаш орқали сиз ўзингизни трансформация қилишингиз, яширин имкониятларингизни озод этишингиз ва янги даражага кўтарилишингиз мумкин.</p></div></details>
+</section>
+
+<section id="d26"><h2><span>26</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">17</span><b>ЮЛДУЗЛАР ТАЪСИРИ. ЯРАТУВЧИ МЕРКАБАСИ</b></summary><div class="t"><p>Бу — имкониятлар ва орзу-истакларнинг амалга ошиши картаси. Руҳингизнинг бахт юлдузи.</p><p>Худолар уларга илтижо ва ёлворишлар билан мурожаат қилаётган Руҳлар томон пастга тушмайдилар, балки Руҳнинг ўзи Худо томон юксалади.</p><p>Руҳ юксалар экан, онг қатламлари бўйлаб ҳаракатланиб, Яратувчининг Буюк Юлдузи сари интилади.</p></div></details>
+</section>
+
+<section id="d27"><h2><span>27</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">9</span><b>ИЧКИ НУР. РУҲ ТАНЛОВИ</b></summary><div class="t"><p>9-карта инсонни руҳий уйғониш орқали қайта тирилтирадиган кўринмас, сирли нурни ифодалайди. Бу — тўхташ, ўз ички оламингизга чуқур шўнғиш ва тафаккур қилиш вақти.</p><p>Бу орқали сиз ички овозингизни эшитишингиз ва Руҳ билан бирлигингизни мустаҳкамлашингиз мумкин. Ақл сукути ва Қалб нури орқали ҳақиқий қайта туғилиш ва донолик намоён бўлади.</p></div></details>
+</section>
+
+<section id="d28"><h2><span>28</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">18</span><b>РУҲИЙ ОЗОДЛИК. ХУДО САРИ ЙЎЛ</b></summary><div class="t"><p>«Руҳий озодликка эришган инсон ҳақиқатан ҳам муборак ва бахтлидир. Худо сари йўл — юксак билимлар ва камтарлик йўлидир».</p><p>Олий Ибтидо сари йўл — Руҳий алхимиядир. Бу жараёнда онгингиз турли қатламлар бўйлаб ҳаракатланади ва ўзининг физик-кимёвий таркибини ўзгартиради. Руҳий озодликка эришиш орқали сиз маърифатга эришасиз.</p></div></details>
+</section>
+
+<section id="d29"><h2><span>29</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<details class="ini" open><summary><span class="n">0</span><b>МУҚАДДАС РУҲ</b></summary><div class="t"><p>Эфир Руҳи — тутиб бўлмайдиган, Ҳаётнинг энг нозик субстанциясидир. Яшаб қолиш учун курашиш, ерга оид билимларни қўлга киритиш ва Эго-Ақлни қондириш ортидан қувиш ўрнига, Севги орқали Юксак Билим сари юксалинг.</p><p>Сизни ўзингизнинг ҳақиқий моҳиятингизни англаш сари етаклашмоқда. Онгингиз шахсий эгодан чексиз Космик онгга айланиб бормоқда.</p><p>Ҳаётнинг бешинчи унсури — Эфир билан бирлашиш вақти келди.</p></div></details>
+</section>
+
+<section id="d30"><h2><span>30</span>дарс</h2>
+<div class="part"><span>I</span><b>Илмий-амалий асл билимлар</b></div>
+<div class="part"><span>II</span><b>Чегара ортидаги битиклар</b></div>
+<div class="part"><span>III</span><b>Инициация</b></div>
+<p class="soon">✦ Инициация тафсилотлари тез орада</p>
+</section>
+
+<section id="links"><h2>Биз билан боғланинг</h2><div class="socs"><a class="soc" href="https://www.instagram.com/el_shekhina?xtok=MTRidjhjeWJ4cGlscg==" target="_blank" rel="noopener noreferrer"><span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span class="st"><b>Instagram</b><small>@el_shekhina</small></span></a><a class="soc" href="https://youtube.com/@shaxnozamaxsumova?si=Ex9NT8mYZolns7bv" target="_blank" rel="noopener noreferrer"><span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></span><span class="st"><b>YouTube · Дарсликлар</b><small>Шахноза Махсумова</small></span></a><a class="soc" href="https://youtube.com/@yaratuvchi_ongi_akademiyasi?si=qhfIkJNfEJqFCkLp" target="_blank" rel="noopener noreferrer"><span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="4"/><path d="M10.2 9v6l5-3z" fill="currentColor"/></svg></span><span class="st"><b>YouTube · Shorts</b><small>Яратувчи онги академияси</small></span></a><a class="soc" href="https://t.me/Shaxnoza_Maxsumova" target="_blank" rel="noopener noreferrer"><span class="si"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.4 4.1 2.9 11.3c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8 1 .8.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.8c.3-1.3-.5-1.9-1.3-1.5zM8.6 14.1l9.4-5.9c.4-.3.9-.1.5.2l-7.8 7-.3 3.2z"/></svg></span><span class="st"><b>Telegram канал</b><small>Шахноза Махсумова</small></span></a></div></section>
+</main>
+<footer>Тубсизликнинг энг юқори нуқтаси · 30 дарс<br><a href="https://t.me/Shaxnoza_Maxsumova" target="_blank" rel="noopener noreferrer">Telegram</a> · <a href="https://www.instagram.com/el_shekhina?xtok=MTRidjhjeWJ4cGlscg==" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://youtube.com/@shaxnozamaxsumova?si=Ex9NT8mYZolns7bv" target="_blank" rel="noopener noreferrer">YouTube</a></footer>
+<script>
+(function(){
+var c=document.getElementById('sky'),x=c.getContext('2d'),W,H,S=[],M=[],G=[],dpr=Math.min(window.devicePixelRatio||1,2);
+var still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function gauss(){return (Math.random()+Math.random()+Math.random()-1.5)/1.5;}
+function makeGal(R,hue,arms,wind){
+ var o=document.createElement('canvas'),D=Math.round(R*2*dpr);o.width=o.height=D;var g=o.getContext('2d');
+ g.translate(D/2,D/2);g.scale(dpr,dpr);
+ var gl=g.createRadialGradient(0,0,0,0,0,R*.5);
+ gl.addColorStop(0,'rgba(255,240,210,.95)');gl.addColorStop(.25,'rgba(255,215,160,.45)');gl.addColorStop(1,'rgba(255,200,150,0)');
+ g.fillStyle=gl;g.beginPath();g.arc(0,0,R*.5,0,6.283);g.fill();
+ var N=Math.round(R*16);
+ for(var i=0;i<N;i++){
+  var u=Math.pow(Math.random(),.65),r=u*R,arm=Math.floor(Math.random()*arms);
+  var th=arm*6.283/arms+u*wind*6.283+gauss()*(.28+.35*u);
+  var px=Math.cos(th)*r,py=Math.sin(th)*r;
+  var h=hue+u*50-20,l=88-u*38;
+  g.globalAlpha=(.25+Math.random()*.6)*(1-u*.55);
+  g.fillStyle='hsl('+h+','+(55+u*35)+'%,'+l+'%)';
+  var sz=Math.random()<.04?1.7:.7+Math.random()*.7;
+  g.fillRect(px,py,sz,sz);
+ }
+ for(var k=0;k<14;k++){var u2=.3+Math.random()*.7,t2=Math.random()*6.283;
+  var nx=Math.cos(t2)*u2*R*.8,ny=Math.sin(t2)*u2*R*.8,ng=g.createRadialGradient(nx,ny,0,nx,ny,R*.16);
+  ng.addColorStop(0,'hsla('+(hue+20)+',80%,65%,.10)');ng.addColorStop(1,'hsla('+(hue+20)+',80%,65%,0)');
+  g.globalAlpha=1;g.fillStyle=ng;g.beginPath();g.arc(nx,ny,R*.16,0,6.283);g.fill();}
+ return o;
+}
+function init(){
+ W=c.clientWidth;H=c.clientHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);
+ var n=Math.round(W*H/2600);S=[];
+ for(var i=0;i<n;i++){var r=Math.random();S.push({x:Math.random()*W,y:Math.random()*H,r:r<.9?Math.random()*1.1+.3:Math.random()*1.8+1.2,p:Math.random()*6.28,s:Math.random()*1.6+.4,h:Math.random()<.2?(Math.random()<.5?'200,220,255':'255,225,170'):'255,255,255',g:r>=.9});}
+ var base=Math.max(120,Math.min(W,H)*.36);
+ G=[{px:.80,py:.20,R:base*1.05,tilt:-.45,flat:.5,sp:.000018,img:makeGal(base*1.05,265,2,.9)},
+    {px:.14,py:.68,R:base*.85,tilt:.5,flat:.42,sp:-.000024,img:makeGal(base*.85,205,3,.7)},
+    {px:.70,py:.92,R:base*.6,tilt:-.2,flat:.7,sp:.00003,img:makeGal(base*.6,320,2,1.1)}];
+}
+function draw(t){
+ x.clearRect(0,0,W,H);
+ for(var j=0;j<G.length;j++){var q=G[j];x.save();x.globalAlpha=.7;x.translate(q.px*W,q.py*H);x.rotate(q.tilt);x.scale(1,q.flat);x.rotate(still?0:t*q.sp);x.drawImage(q.img,-q.R,-q.R,q.R*2,q.R*2);x.restore();}
+ for(var i=0;i<S.length;i++){var s=S[i],a=Math.max(.05,.45+.55*Math.sin(t/1000*s.s+s.p));x.globalAlpha=a;
+  if(s.g){var g=x.createRadialGradient(s.x,s.y,0,s.x,s.y,s.r*6);g.addColorStop(0,'rgba('+s.h+',.9)');g.addColorStop(1,'rgba('+s.h+',0)');x.fillStyle=g;x.beginPath();x.arc(s.x,s.y,s.r*6,0,6.283);x.fill();}
+  x.fillStyle='rgb('+s.h+')';x.beginPath();x.arc(s.x,s.y,s.r,0,6.283);x.fill();}
+ x.globalAlpha=1;
+ if(!still){
+  if(Math.random()<.004&&M.length<2)M.push({x:Math.random()*W*.8+W*.2,y:Math.random()*H*.4,l:0});
+  for(var m2=M.length-1;m2>=0;m2--){var m=M[m2];m.l++;var px=m.x-m.l*9,py=m.y+m.l*5,a2=1-m.l/50;if(a2<=0){M.splice(m2,1);continue;}
+   var gr=x.createLinearGradient(px,py,px+70,py-39);gr.addColorStop(0,'rgba(255,255,255,0)');gr.addColorStop(1,'rgba(255,255,255,'+a2+')');x.strokeStyle=gr;x.lineWidth=1.6;x.beginPath();x.moveTo(px,py);x.lineTo(px+70,py-39);x.stroke();}
+  requestAnimationFrame(draw);}
+}
+init();if(still)draw(0);else requestAnimationFrame(draw);
+var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){init();if(still)draw(0);},150);});
+})();
+</script>
+
+</body>
+</html>
